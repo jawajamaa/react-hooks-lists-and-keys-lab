@@ -6,7 +6,7 @@ import ProjectList from "./ProjectList";
 import user from "../data/user";
 
 function App() {
-  console.log(user.projects);
+  console.log(user.projects[2].id);
   return (
     <div>
       <NavBar />
@@ -21,7 +21,6 @@ function App() {
       />
       <ProjectList 
       projects={user.projects} 
-      id={user.projects.id}
       />
     </div>
   );
